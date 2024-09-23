@@ -11,13 +11,13 @@ def get_names():
     names = []
     while True:
         try: 
-            names.append(input("Name: "))
+            names.append(input())
         except EOFError:
             return names
 
 def text_names(names : str):
     leght  = len(names)
-    text ="\nAdieu, adieu, to "
+    text ="Adieu, adieu, to "
     if leght == 1: 
         return text + names[0]
     for i, name in enumerate(names):
