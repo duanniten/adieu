@@ -20,6 +20,8 @@ def text_names(names : str):
     text ="Adieu, adieu, to "
     if leght == 1: 
         return text + names[0]
+    if leght == 2:
+        return f"{text}{names[0]} and {names[1]}"
     for i, name in enumerate(names):
         if i == leght -1 :
             text += f"and {name}"
